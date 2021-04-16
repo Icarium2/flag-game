@@ -1,5 +1,8 @@
+import React from "react";
+import FlagCard from "./components/flag-card/FlagCard";
+
 function App() {
-  return <div className="App">hej hej</div>;
+  return <FlagCard />;
 }
 
 export default App;
