@@ -1,0 +1,19 @@
+.answerContainer {
+  display: flex;
+  margin-top: 25px;
+  align-items: center;
+  justify-content: center;
+}
+.answer {
+  padding: 15px;
+  background-color: white;
+  color: hotpink;
+  border: 2px solid hotpink;
+  border-radius: 95px;
+  width: 100px;
+  font-weight: bolder;
+}
+.answer:hover {
+  opacity: 0.9;
+  background-color: rgb(197, 197, 197);
+}

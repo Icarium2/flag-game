@@ -23,7 +23,12 @@ const FlagCard = () => {
   }, []);
   return (
     <div className={styles.cardContainer}>
-      <img src={country.flag} alt="nice try retard" />
+      <img src={country.flag} alt="nice try" />
+      <div className={styles.questionContainer}>
+        <h2 className={styles.question}>
+          What country does this flag belongs to?
+        </h2>
+      </div>
     </div>
   );
 };
