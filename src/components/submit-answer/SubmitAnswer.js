@@ -1,33 +1,47 @@
 import React, { useRef, useState, useEffect } from "react";
 import styles from "./SubmitAnswer.module.css";
+import { fetchCountry } from "../../helpers/FetchCountry";
 
-const SubmitAnswer = ({ country }) => {
+export const SubmitAnswer = ({
+  setCountry,
+  country,
+  score,
+  setScore,
+  randomCountry,
+}) => {
   const answerRef = useRef();
 
-  const handleSubmit = (e) => {
-    e.preventDefault();
-
+  const handleClick = () => {
     if (country?.name === answerRef.current.value) {
+      setScore((score += 1));
+      fetchCountry(setCountry, randomCountry);
       window.alert("right guess bitch");
     } else {
-      window.alert("guess again moron");
+      window.alert("guess again, moron");
     }
+  };
+
+  const handlePass = () => {
+    fetchCountry(setCountry, randomCountry);
   };
 
   return (
     <div className={styles.answerWrapper}>
-      <form onSubmit={handleSubmit}>
-        <div className={styles.inputContainer}>
-          <input type="text" ref={answerRef}></input>
-        </div>
-        <div className={styles.buttonContainer}>
-          <button type="submit" className={styles.answer}>
-            Answer
-          </button>
-        </div>
-      </form>
+      <div className={styles.inputContainer}>
+        <input type="text" ref={answerRef}></input>
+      </div>
+      <div className={styles.buttonContainer}>
+        <button onClick={handleClick} type="button" className={styles.answer}>
+          Answer
+        </button>
+        <button
+          onClick={handlePass}
+          type="button"
+          className={styles.passButton}
+        >
+          Pass
+        </button>
+      </div>
     </div>
   );
 };
-
-export default SubmitAnswer;

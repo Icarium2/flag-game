@@ -1,17 +1,31 @@
 import React, { useState } from "react";
-import FlagCard from "./components/flag-card/FlagCard";
-import SubmitAnswer from "./components/submit-answer/SubmitAnswer";
-import Score from "./components/score/Score.js";
+import { FlagCard, SubmitAnswer, Score } from "./components";
+import { CountryCodes } from "./components/flag-card/CountryCodes";
 
 function App() {
-  const [country, setCountry] = useState();
+  const [country, setCountry] = useState({});
+  const [score, setScore] = useState(0);
+  const [availableCountries, setAvailableCountries] = useState(CountryCodes);
+  const randomCountry =
+    availableCountries[
+      Math.floor(Math.random() * availableCountries.length - 1)
+    ];
 
   return (
     <div>
-      <Score />
-      <FlagCard setCountry={setCountry} country={country} />
-
-      <SubmitAnswer country={country} />
+      <Score score={score} />
+      <FlagCard
+        setCountry={setCountry}
+        country={country}
+        randomCountry={randomCountry}
+      />
+      <SubmitAnswer
+        setCountry={setCountry}
+        country={country}
+        score={score}
+        setScore={setScore}
+        randomCountry={randomCountry}
+      />
     </div>
   );
 }
