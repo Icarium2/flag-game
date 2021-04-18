@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { FlagCard, SubmitAnswer, Score } from "./components";
+import { FlagCard, SubmitAnswer, Score, Logo } from "./components";
 import { CountryCodes } from "./components/flag-card/CountryCodes";
 
 function App() {
@@ -13,6 +13,11 @@ function App() {
 
   return (
     <div>
+<<<<<<< Updated upstream
+=======
+      <Logo />
+      <Score score={score} />
+>>>>>>> Stashed changes
       <FlagCard
         setCountry={setCountry}
         country={country}
