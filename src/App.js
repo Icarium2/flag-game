@@ -14,7 +14,6 @@ function App() {
   return (
     <div>
       <Logo />
-      <Score score={score} />
       <FlagCard
         setCountry={setCountry}
         country={country}
