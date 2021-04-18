@@ -14,7 +14,7 @@ export const FlagCard = ({ setCountry, country, randomCountry }) => {
       </div>
       <div className={styles.questionContainer}>
         <h2 className={styles.question}>
-          Which country does this flag belong to?
+          What country does this flag belong to?
         </h2>
       </div>
     </div>

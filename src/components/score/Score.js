@@ -3,8 +3,9 @@ import styles from "./Score.module.css";
 
 export const Score = ({ score }) => {
   return (
-    <div className={styles.scoreContainer}>
-      <p>points:{score}</p>
+    <div className={styles.scoreWrapper}>
+      <p className={styles.points}>Points: </p>
+      <p className={styles.score}> {score}</p>
     </div>
   );
 };

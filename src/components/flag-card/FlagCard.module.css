@@ -2,12 +2,12 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  border: 2px solid white;
   height: 300px;
   width: 400px;
   margin-top: 50%;
-  background-color: black;
+  background: rgb(103, 128, 211);
   flex-direction: column;
+  border-radius: 95px;
 }
 img {
   max-width: 250px;
@@ -22,7 +22,7 @@ img {
 }
 
 .question {
-  color: white;
+  color: rgb(35, 41, 146);
   font-size: 20px;
 }
 

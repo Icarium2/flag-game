@@ -13,12 +13,12 @@ function App() {
 
   return (
     <div>
-      <Score score={score} />
       <FlagCard
         setCountry={setCountry}
         country={country}
         randomCountry={randomCountry}
       />
+      <Score score={score} />
       <SubmitAnswer
         setCountry={setCountry}
         country={country}

@@ -15,9 +15,10 @@ export const SubmitAnswer = ({
     if (country?.name === answerRef.current.value) {
       setScore((score += 1));
       fetchCountry(setCountry, randomCountry);
-      window.alert("right guess bitch");
+      window.alert("Correct!");
     } else {
-      window.alert("guess again, moron");
+      window.alert(`Wrong! This flag belongs to ${country.name}`);
+      fetchCountry(setCountry, randomCountry);
     }
   };
 
