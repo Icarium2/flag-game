@@ -7,18 +7,18 @@
   margin-top: 50%;
   background: rgb(103, 128, 211);
   flex-direction: column;
-  border-radius: 95px;
 }
 img {
   max-width: 250px;
   max-height: 150px;
 }
 
-.questionContainer {
+.questionWrapper {
   display: flex;
   align-items: center;
   justify-content: center;
   padding: 4px;
+  box-shadow: 1px 1px 1px 1px rgb(69, 80, 131);
 }
 
 .question {

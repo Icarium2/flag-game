@@ -12,11 +12,11 @@
   color: rgb(163, 182, 245);
   border-radius: 95px;
   width: 150px;
-  font-weight: bolder;
+  font-weight: bold;
   margin: 10px;
   box-shadow: 2px 2px 2px black;
   border: none;
-  font-family: "Architects Daughter", cursive;
+  font-family: "Fredoka One", cursive;
 }
 .answer:hover,
 .passButton:hover {
@@ -45,7 +45,7 @@ input {
   border: 2px solid rgb(132, 98, 226);
   outline: none;
   padding: 3px;
-  font-family: "Architects Daughter", cursive;
-  font-weight: bolder;
+  font-family: "Fredoka One", cursive;
+  font-weight: bold;
   text-align: center;
 }

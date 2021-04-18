@@ -12,7 +12,7 @@ export const FlagCard = ({ setCountry, country, randomCountry }) => {
       <div className={styles.flagWrapper}>
         {country.flag && <img src={country?.flag} alt="nice try" />}
       </div>
-      <div className={styles.questionContainer}>
+      <div className={styles.questionWrapper}>
         <h2 className={styles.question}>
           What country does this flag belong to?
         </h2>
