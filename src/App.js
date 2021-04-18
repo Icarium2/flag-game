@@ -13,11 +13,8 @@ function App() {
 
   return (
     <div>
-<<<<<<< Updated upstream
-=======
       <Logo />
       <Score score={score} />
->>>>>>> Stashed changes
       <FlagCard
         setCountry={setCountry}
         country={country}
