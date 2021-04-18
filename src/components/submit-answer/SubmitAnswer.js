@@ -12,7 +12,7 @@ export const SubmitAnswer = ({
   const answerRef = useRef();
 
   const handleClick = () => {
-    if (country?.name === answerRef.current.value) {
+    if (country?.name.toLowerCase() === answerRef.current.value.toLowerCase()) {
       setScore((score += 1));
       fetchCountry(setCountry, randomCountry);
       window.alert("Correct!");
@@ -20,16 +20,22 @@ export const SubmitAnswer = ({
       window.alert(`Wrong! This flag belongs to ${country.name}`);
       fetchCountry(setCountry, randomCountry);
     }
+    answerRef.current.value = "";
   };
 
   const handlePass = () => {
     fetchCountry(setCountry, randomCountry);
+    answerRef.current.value = "";
   };
 
   return (
     <div className={styles.answerWrapper}>
       <div className={styles.inputContainer}>
-        <input type="text" ref={answerRef}></input>
+        <input
+          type="text"
+          onKeyPress={(e) => e.key === "Enter" && handleClick()}
+          ref={answerRef}
+        ></input>
       </div>
       <div className={styles.buttonContainer}>
         <button onClick={handleClick} type="button" className={styles.answer}>
