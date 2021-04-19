@@ -6,7 +6,7 @@ export const Logo = () => {
   return (
     <div className={styles.logoContainer}>
       <svg
-        class={styles.flagLine}
+        className={styles.flagLine}
         width="452"
         height="99"
         viewBox="0 0 452 99"
@@ -20,7 +20,7 @@ export const Logo = () => {
             stroke="black"
             strokeWidth="3"
           />
-          <g id="flag11">
+          <g id={styles.flag11}>
             <g id="flag11_2">
               <g filter="url(#filter0_i)">
                 <path
@@ -63,7 +63,7 @@ export const Logo = () => {
               strokeWidth="0.5"
             />
           </g>
-          <g id="flag9">
+          <g id={styles.flag9}>
             <path
               id="flag9_2"
               d="M288.286 47.441L319.836 36.9364C314.942 47.8307 314.415 54.5104 314.955 66.7976C306.155 56.5128 300.295 52.3105 288.286 47.441Z"
@@ -77,7 +77,7 @@ export const Logo = () => {
               fill="white"
             />
           </g>
-          <g id="flag8">
+          <g id={styles.flag8}>
             <g id="flag8_2">
               <path
                 id="flag8_3"
@@ -145,7 +145,7 @@ export const Logo = () => {
               strokeWidth="2.5"
             />
           </g>
-          <g id="flag7">
+          <g id={styles.flag7}>
             <path
               id="flag7_2"
               d="M245.018 91.1289C237.984 78.9322 233.494 72.4392 224.131 61.7159L255.707 57.1622C248.791 69.1401 246.358 76.5132 245.018 91.1289Z"
@@ -196,7 +196,7 @@ export const Logo = () => {
               strokeWidth="0.3"
             />
           </g>
-          <g id="flag6">
+          <g id={styles.flag6}>
             <path
               id="flag6_2"
               d="M200.093 91.1123L201.651 94.2718L202.85 90.955C206.918 79.6978 210.119 73.7306 218.971 63.7834L221.151 61.3342L217.876 61.2875L185.939 60.8314L182.73 60.7856L184.749 63.2768C190.469 70.3355 194.754 76.9487 197.568 85.9497L197.603 86.0607L197.654 86.165L200.093 91.1123Z"
@@ -226,7 +226,7 @@ export const Logo = () => {
               strokeWidth="0.3"
             />
           </g>
-          <g id="flag5">
+          <g id={styles.flag5}>
             <path
               id="flag5_2"
               d="M162.095 86.1745C160.328 76.0029 158.287 69.8165 149.932 56.6125L181.622 60.3914C173.329 67.8892 169.098 73.7018 162.095 86.1745Z"
@@ -318,7 +318,7 @@ export const Logo = () => {
               strokeLinejoin="round"
             />
           </g>
-          <g id="flag4">
+          <g id={styles.flag4}>
             <path
               id="flag4_2"
               d="M124.654 82.7611C125.159 71.0089 123.517 63.5232 116.879 48.4451L147.949 55.4591C139.206 61.9501 134.029 68.8374 124.654 82.7611Z"
@@ -346,7 +346,7 @@ export const Logo = () => {
               strokeWidth="0.1"
             />
           </g>
-          <g id="flag3">
+          <g id={styles.flag3}>
             <path
               id="flag3_2"
               d="M88.8263 68.6956C88.7347 56.5914 87.3948 49.763 82.6819 37.5078L113.077 46.8001C104.199 53.0383 99.5711 56.6715 93.5 64L88.8263 68.6956Z"
@@ -362,7 +362,7 @@ export const Logo = () => {
               strokeWidth="0.5"
             />
           </g>
-          <g id="flag2">
+          <g id={styles.flag2}>
             <path
               id="flag2_2"
               d="M50.4625 54.7864C51.1882 41.8221 50.7651 34.8432 47.8837 23.1378L77.0483 35.6098C77.0483 35.6098 68.1328 39.8066 63 43.5C57.731 47.2914 50.4625 54.7864 50.4625 54.7864Z"
@@ -378,7 +378,7 @@ export const Logo = () => {
               strokeWidth="0.5"
             />
           </g>
-          <g id="flag1">
+          <g id={styles.flag1}>
             <path
               id="flag1_2"
               d="M14.5477 39.0806C15.7669 26.3184 15.3605 19.3942 13.2153 7.38269L41.8768 20.6317C29.8478 25.7069 23.8331 29.6959 14.5477 39.0806Z"

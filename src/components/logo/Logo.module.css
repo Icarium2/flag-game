@@ -9,17 +9,27 @@
   margin-top: 13%;
 }
 
-#flag10 {
-  animation: flaganimation 1s ease infinite alternate;
-  transform-origin: center;
+#flag1,
+#flag2,
+#flag3,
+#flag4,
+#flag5,
+#flag6,
+#flag7,
+#flag8,
+#flag9,
+#flag10,
+#flag11 {
+  animation: flaganimation 2s ease infinite alternate;
+  transform-origin: top;
   transform-box: fill-box;
 }
 
 @keyframes flaganimation {
   from {
-    transform: rotate(0deg);
+    transform: rotate3d(1, 1, 1, 2deg);
   }
   to {
-    transform: rotate(30deg);
+    transform: rotate3d(-1, -1, -1, 7deg);
   }
 }
