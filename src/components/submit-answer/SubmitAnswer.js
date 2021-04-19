@@ -9,14 +9,17 @@ export const SubmitAnswer = ({
   score,
   setScore,
   randomCountry,
+  guesses,
+  setGuesses,
+  removeCountry,
 }) => {
   const answerRef = useRef();
   const [correctGuess, setCorrectGuess] = useState(false);
   const [wrongGuess, setWrongGuess] = useState(false);
-
   const handleClick = () => {
     if (country?.name.toLowerCase() === answerRef.current.value.toLowerCase()) {
       setScore((score += 1));
+      setGuesses((guesses -= 1));
       setCorrectGuess(true);
       setTimeout(() => {
         setCorrectGuess(false);
@@ -26,11 +29,14 @@ export const SubmitAnswer = ({
       setWrongGuess(true);
     }
     answerRef.current.value = "";
+    console.log(country);
+    removeCountry(country);
   };
 
   const handlePass = () => {
     setWrongGuess(false);
     setCorrectGuess(false);
+    setGuesses((guesses -= 1));
     fetchCountry(setCountry, randomCountry);
     answerRef.current.value = "";
   };

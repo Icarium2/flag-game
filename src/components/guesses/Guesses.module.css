@@ -1,0 +1,29 @@
+.guessesWrapper {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.guesses {
+  color: #305464;
+  font-weight: bolder;
+  padding-right: 10px;
+  font-size: 25px;
+}
+
+.guessesCount {
+  padding-left: 10px;
+  color: #b088f9;
+  font-weight: bolder;
+  font-size: 25px;
+}
+
+@media only screen and (max-width: 600px) {
+  .guesses {
+    font-size: 18px;
+  }
+  .guessesCount {
+    font-size: 18px;
+  }
+}
