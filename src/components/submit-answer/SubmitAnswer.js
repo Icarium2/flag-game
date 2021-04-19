@@ -1,7 +1,6 @@
-import React, { useRef, useState, useEffect } from "react";
+import React, { useRef, useState } from "react";
 import styles from "./SubmitAnswer.module.css";
 import { fetchCountry } from "../../helpers/FetchCountry";
-import userEvent from "@testing-library/user-event";
 
 export const SubmitAnswer = ({
   setCountry,

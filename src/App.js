@@ -38,7 +38,7 @@ function App() {
     if (guesses === 0 || availableCountries.length === 0) {
       setGameOver(true);
     }
-  });
+  }, [guesses, availableCountries]);
 
   return (
     <div>
