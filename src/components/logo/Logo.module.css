@@ -4,6 +4,11 @@
   justify-content: center;
 }
 
+.flagLine {
+  transform: scale(2);
+  margin-top: 13%;
+}
+
 #flag10 {
   animation: flaganimation 1s ease infinite alternate;
   transform-origin: center;
