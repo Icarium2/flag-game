@@ -1,3 +1,3 @@
 # React-Flag-Game
 
-nice try kid
+Fun with flags!
