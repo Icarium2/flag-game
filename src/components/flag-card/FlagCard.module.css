@@ -4,7 +4,7 @@
   justify-content: center;
   height: 300px;
   width: max-content;
-  margin-top: 20vh;
+  margin-bottom: -20px;
   flex-direction: column;
 }
 .flagWrapper {
@@ -33,10 +33,11 @@ img {
 
 @media only screen and (max-width: 600px) {
   .cardContainer {
-    margin-top: 4vh;
     display: flex;
     align-items: center;
     justify-content: center;
+    transform: scale(0.8);
+    width: 100%;
   }
 
   .question {

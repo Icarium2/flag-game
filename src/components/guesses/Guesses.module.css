@@ -9,14 +9,14 @@
   color: #304b64;
   font-weight: bolder;
   padding-right: 10px;
-  font-size: 25px;
+  font-size: 22px;
 }
 
 .guessesCount {
   padding-left: 10px;
   color: #b088f9;
   font-weight: bolder;
-  font-size: 25px;
+  font-size: 22px;
 }
 
 @media only screen and (max-width: 600px) {
