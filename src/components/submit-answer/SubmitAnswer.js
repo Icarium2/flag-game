@@ -28,7 +28,7 @@ export const SubmitAnswer = ({
       setWrongGuess(true);
     }
     answerRef.current.value = "";
-    console.log(country);
+
     removeCountry(country);
   };
 
