@@ -3,6 +3,7 @@
   align-items: center;
   justify-content: center;
   flex-direction: column;
+  max-width: max-content;
 }
 
 .endOfGameText {
@@ -28,4 +29,17 @@
   opacity: 0.9;
   transform: scale(1.2);
   cursor: pointer;
+}
+
+@media only screen and (max-width: 600px) {
+  .endOfGameContainer {
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: 4vw;
+    margin-right: 4vw;
+  }
+  .endOfGameContainer h1 {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
 }
