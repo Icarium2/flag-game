@@ -4,7 +4,7 @@
 
 Welcome to Flaguessr! 
 
-A flag game built with react. Guess which flag belongs to which country.
+A flag game built with React. Guess which flag belongs to which country.
 
 # Netlify link
 
