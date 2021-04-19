@@ -6,7 +6,7 @@ import sound2 from "../../assets/sounds/tada.wav";
 let womp = new Audio(sound1);
 let tada = new Audio(sound2);
 
-export const FinishGame = ({ score, finishGame }) => {
+export const FinishGame = ({ score }) => {
   setImmediate(() => {
     if (score < 6) {
       womp.play();
@@ -16,7 +16,9 @@ export const FinishGame = ({ score, finishGame }) => {
   });
   return (
     <div className={styles.endOfGameContainer}>
-      <h1>Congratulations, you finished with {score} points!</h1>
+      <h1 className={styles.endOfGameText}>
+        Congratulations, you finished with {score} points!
+      </h1>
     </div>
   );
 };

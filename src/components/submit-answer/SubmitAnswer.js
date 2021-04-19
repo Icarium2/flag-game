@@ -24,7 +24,7 @@ export const SubmitAnswer = ({
       setTimeout(() => {
         setCorrectGuess(false);
         fetchCountry(setCountry, randomCountry);
-      }, 2000);
+      }, 1000);
     } else {
       setWrongGuess(true);
     }
