@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React from "react";
 import styles from "./FinishGame.module.css";
 import sound1 from "../../assets/sounds/wompwomp.mp4";
 import sound2 from "../../assets/sounds/tada.wav";
@@ -6,7 +6,7 @@ import sound2 from "../../assets/sounds/tada.wav";
 let womp = new Audio(sound1);
 let tada = new Audio(sound2);
 
-export const FinishGame = ({ score }) => {
+export const FinishGame = ({ restartGame, score }) => {
   setImmediate(() => {
     if (score < 6) {
       womp.play();
@@ -19,6 +19,9 @@ export const FinishGame = ({ score }) => {
       <h1 className={styles.endOfGameText}>
         Congratulations, you finished with {score} points!
       </h1>
+      <button className={styles.restartButton} onClick={restartGame}>
+        Play again
+      </button>
     </div>
   );
 };
