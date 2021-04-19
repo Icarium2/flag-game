@@ -7,15 +7,15 @@ export const Logo = () => {
     <div className={styles.logoContainer}>
       <svg
         className={styles.flagLine}
-        width="452"
+        width="394"
         height="99"
-        viewBox="0 0 452 99"
+        viewBox="0 0 394 99"
         fill="none"
         xmlns="http://www.w3.org/2000/svg"
       >
         <g id="flagbanner">
           <path
-            id="flagline"
+            id={styles.flagLine}
             d="M10.0933 5.36816C157.201 75.4698 238.47 83.3634 380.559 5.36816"
             stroke="black"
             strokeWidth="3"
