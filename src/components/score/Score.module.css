@@ -6,15 +6,24 @@
 }
 
 .points {
-  color: white;
+  color: #305464;
   font-weight: bolder;
   padding-right: 10px;
-  font-size: 20px;
+  font-size: 25px;
 }
 
 .score {
   padding-left: 10px;
-  color: rgb(248, 122, 248);
+  color: #b088f9;
   font-weight: bolder;
-  font-size: 20px;
+  font-size: 25px;
+}
+
+@media only screen and (max-width: 600px) {
+  .points {
+    font-size: 18px;
+  }
+  .score {
+    font-size: 18px;
+  }
 }

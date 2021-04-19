@@ -1,6 +1,7 @@
 import React, { useRef, useState, useEffect } from "react";
 import styles from "./SubmitAnswer.module.css";
 import { fetchCountry } from "../../helpers/FetchCountry";
+import userEvent from "@testing-library/user-event";
 
 export const SubmitAnswer = ({
   setCountry,
@@ -10,26 +11,40 @@ export const SubmitAnswer = ({
   randomCountry,
 }) => {
   const answerRef = useRef();
+  const [correctGuess, setCorrectGuess] = useState(false);
+  const [wrongGuess, setWrongGuess] = useState(false);
 
   const handleClick = () => {
     if (country?.name.toLowerCase() === answerRef.current.value.toLowerCase()) {
       setScore((score += 1));
-      fetchCountry(setCountry, randomCountry);
-      window.alert("Correct!");
+      setCorrectGuess(true);
+      setTimeout(() => {
+        setCorrectGuess(false);
+        fetchCountry(setCountry, randomCountry);
+      }, 2000);
     } else {
-      window.alert(`Wrong! This flag belongs to ${country.name}`);
-      fetchCountry(setCountry, randomCountry);
+      setWrongGuess(true);
     }
     answerRef.current.value = "";
   };
 
   const handlePass = () => {
+    setWrongGuess(false);
+    setCorrectGuess(false);
     fetchCountry(setCountry, randomCountry);
     answerRef.current.value = "";
   };
 
   return (
     <div className={styles.answerWrapper}>
+      <div className={styles.messageWrapper}>
+        {correctGuess && <h3 class={styles.correctMessage}>Correct!</h3>}
+        {wrongGuess && (
+          <h3 className={styles.wrongMessage}>
+            Incorrect. It belongs to: {country?.name}
+          </h3>
+        )}
+      </div>
       <div className={styles.inputContainer}>
         <input
           type="text"
@@ -38,7 +53,12 @@ export const SubmitAnswer = ({
         ></input>
       </div>
       <div className={styles.buttonContainer}>
-        <button onClick={handleClick} type="button" className={styles.answer}>
+        <button
+          disabled={wrongGuess}
+          onClick={handleClick}
+          type="button"
+          className={styles.answer}
+        >
           Answer
         </button>
         <button
@@ -46,7 +66,7 @@ export const SubmitAnswer = ({
           type="button"
           className={styles.passButton}
         >
-          Pass
+          Next
         </button>
       </div>
     </div>

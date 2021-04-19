@@ -3,14 +3,19 @@
   align-items: center;
   justify-content: center;
   height: 300px;
-  width: 400px;
-  margin-top: 50%;
-  background: rgb(103, 128, 211);
+  width: max-content;
+  margin-top: 20vh;
   flex-direction: column;
+}
+.flagWrapper {
+  min-width: 250px;
+  min-height: 150px;
 }
 img {
   max-width: 250px;
   max-height: 150px;
+  width: 100%;
+  border-radius: 8px;
 }
 
 .questionWrapper {
@@ -18,15 +23,23 @@ img {
   align-items: center;
   justify-content: center;
   padding: 4px;
-  box-shadow: 1px 1px 1px 1px rgb(69, 80, 131);
 }
 
 .question {
-  color: rgb(35, 41, 146);
-  font-size: 20px;
+  color: #305464;
+  font-size: 25px;
+  width: max-content;
 }
 
-.flagWrapper {
-  min-width: 250px;
-  min-height: 150px;
+@media only screen and (max-width: 600px) {
+  .cardContainer {
+    margin-top: 4vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .question {
+    font-size: 20px;
+  }
 }
