@@ -2,11 +2,11 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  margin-left: 30px;
 }
 
 .flagLine {
-  transform: scale(2);
-  margin-top: 13%;
+  transform: scale(1);
 }
 
 #flag1,
@@ -31,5 +31,11 @@
   }
   to {
     transform: rotate3d(-1, -1, -1, 7deg);
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .logoContainer {
+    transform: scale(0.8);
   }
 }
