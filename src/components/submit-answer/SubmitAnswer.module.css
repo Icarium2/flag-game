@@ -89,4 +89,18 @@ input:active {
   .correctMessage {
     font-size: 14px;
   }
+
+  .answer,
+  .passButton {
+    padding: 15px;
+    color: #304b64;
+    background-color: #b088f9;
+    border-radius: 8px;
+    width: 120px;
+    font-weight: normal;
+    font-size: 12px;
+    margin: 10px;
+    border: none;
+    font-family: "Fredoka One", cursive;
+  }
 }
