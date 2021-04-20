@@ -12,5 +12,5 @@ https://nametheflag.netlify.app/
 
 # Creators
 
-[Rikard Segerkvist](Rikard Segerkvist), [Jonathan Larsson](Jonathan Larsson)
+$[Rikard Segerkvist](Rikard Segerkvist), $[Jonathan Larsson](Jonathan Larsson)
 
