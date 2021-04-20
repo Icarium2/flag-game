@@ -16,7 +16,9 @@ https://nametheflag.netlify.app/
 - Add altSpellings to the API-calls to make sure that things like United Kingdom is a correct guess rather than
  forcing users to type in the full name i.e United Kingdom (Of Great Britain and Northern Ireland).
 - Maybe add sounds to all guesses rather than just the end-screen.
+- Add an option to turn sound-effects on and off.
 - Add media queries to split the content up a bit more on wide/ultrawide screen resolutions.
+
 
 
 # Creators
